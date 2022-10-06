@@ -1,0 +1,19 @@
+[package]
+name = "iop"
+description = "Plonk polynominal iteractive oracle proof"
+version = "0.1.0"
+edition = "2021"
+authors = ["baraka"]
+license = "MIT"
+
+[dependencies]
+ark-ff = {version = "0.3.0", features = ["asm"]}
+ark-poly = "0.3.0"
+ark-poly-commit = "0.3.0"
+ark-ec = "0.3.0"
+rand = "0.8.5"
+constraint = {path = "../constraint"}
+ark-serialize = "0.3.0"
+merlin = { version = "3.0.0", default-features = false }
+
+
